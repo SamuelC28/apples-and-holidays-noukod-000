@@ -78,7 +78,7 @@ def all_holidays_with_bbq(holiday_hash)
     # add_supply_to_memorial_day(holiday_hash, supply)
     holiday.each do |activity, party|
       if party.include?("BBQ")
-      return "#{activity}"
+      p "#{activity}"
       end
     end
   end
