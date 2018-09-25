@@ -76,10 +76,11 @@ def all_holidays_with_bbq(holiday_hash)
   # holiday_names =[]
   holiday_hash.each do |season, holiday|
     # add_supply_to_memorial_day(holiday_hash, supply)
-    holiday.collect do |activity, party|
-     if party.include?("BBQ")
-        activity.flatten
+    holiday.each do |activity, party|
+      if party.include?("BBQ")
+       puts "{#{activity}.to_a}"
       end
     end
   end
 end
+  all_holidays_with_bbq(holiday_hash)
