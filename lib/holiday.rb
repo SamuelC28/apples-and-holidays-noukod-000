@@ -67,8 +67,9 @@ def all_supplies_in_holidays(holiday_hash)
      puts " #{activity.to_s.split("_").collect {|i| i.capitalize}.join(" ")}: #{party.join(", ")}"
     end
   end
+  all_supplies_in_holidays(holiday_hash)
 end
-all_supplies_in_holidays(holiday_hash)
+
 def all_holidays_with_bbq(holiday_hash)
   # return an array of holiday names (as symbols) where supply lists
   # include the string "BBQ"
