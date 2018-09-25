@@ -79,9 +79,9 @@ def all_holidays_with_bbq(holiday_hash)
     holiday_names =[]
     holiday.each do |activity, party|
       if party.include?("BBQ")
-       holiday << party
+       holiday_names << party
       end
     end
   end
-  return
+  return holiday_names
 end
