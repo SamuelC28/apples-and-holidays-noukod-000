@@ -78,7 +78,7 @@ def all_holidays_with_bbq(holiday_hash)
     # add_supply_to_memorial_day(holiday_hash, supply)
     holiday.collect do |activity, party|
      if party.include?("BBQ")
-        "#{activity.flatten}"
+        activity.flatten
       end
     end
   end
