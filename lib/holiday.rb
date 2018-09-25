@@ -76,11 +76,13 @@ def all_holidays_with_bbq(holiday_hash)
   # holiday_names =[]
   holiday_hash.each do |season, holiday|
     # add_supply_to_memorial_day(holiday_hash, supply)
+    holiday_names =[]
     holiday.each do |activity, party|
       if party.include?("BBQ")
-       puts "#{activity}.to_a}"
+       holiday << party
       end
     end
   end
+  return
 end
-  all_holidays_with_bbq(holiday_hash)
+  
