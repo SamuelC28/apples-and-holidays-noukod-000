@@ -73,12 +73,16 @@ end
 def all_holidays_with_bbq(holiday_hash)
   # return an array of holiday names (as symbols) where supply lists
   # include the string "BBQ"
-  holiday_names =[]
+  def all_holidays_with_bbq(holiday_hash)
+  # return an array of holiday names (as symbols) where supply lists
+  # include the string "BBQ"
+  # holiday_names =[]
   holiday_hash.each do |season, holiday|
     # add_supply_to_memorial_day(holiday_hash, supply)
-    holiday_names << holiday
+    holiday.each do |activity, party|
+      puts "#{activity}"
     end
-
-  puts holiday_names
+  end
+end
 end
   # all_holidays_with_bbq(holiday_hash)
